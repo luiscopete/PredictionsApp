@@ -43,4 +43,4 @@ Esta es una aplicación web simple construida con Streamlit que permite a los us
 Si deseas contribuir a este proyecto o mejorar la aplicación, puedes hacerlo creando un fork del repositorio y enviando pull requests.
 
 ## Autores
-- Luis Copete - [LinkedIn](https://linkedin.com/in/luiscopete) - [GitHub](htpps://github.com/luiscopete) - [Portafolio](https://www.luiscopete.com)
+- Luis Copete - [LinkedIn](https://linkedin.com/in/luiscopete) - [Portafolio](https://www.luiscopete.com)

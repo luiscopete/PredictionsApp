@@ -12,7 +12,7 @@ import util_functions as uf
 st.title('Modelo de regresión. :chart_with_upwards_trend:')
 st.write('Bienvenido a esta web app de predicción. Aquí podrás predecir datos utilizando un modelo de regresión.')
 
-cover_image_path = 'images\data.png'
+cover_image_path = 'images/data.png'
 st.sidebar.image(cover_image_path, width=200)
 st.sidebar.header('Parámetros de la predicción')
 

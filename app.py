@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import time
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
+import util_functions as uf
 
 
 st.title('Modelo de regresión. :chart_with_upwards_trend:')

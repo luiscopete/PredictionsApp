@@ -12,6 +12,7 @@ Esta es una aplicación web simple construida con Streamlit que permite a los us
 - numpy
 - matplotlib
 - scikit-learn
+- Seaborn
 
 ## Instrucciones de Uso
 

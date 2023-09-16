@@ -68,23 +68,3 @@ if df is not None:
         sns.regplot(x=x_col, y=y_col, data=df)
         fig.savefig('regression_plot.png')  # save the figure
         st.image('regression_plot.png')  # display the saved figure
-        # ---------------------------
-        file_pred = st.file_uploader(
-            'Cargar un archivo CSV para predecir', type=['csv'])
-        if file_pred is not None:
-            df_pred = uf.load_data(file_pred)
-            cols = df_pred.columns.tolist()
-            cols = [col for col in cols if df_pred[col].dtype in [
-                np.int64, np.int32, np.float64, np.float32]]
-            cols.insert(0, 'Sin seleccionar')
-            st.write('Selecciona la columna predictora')
-            x_col_pred = st.selectbox('Columna predictora (X)', cols)
-            if x_col_pred != 'Sin seleccionar':
-                df_pred = uf.predict_data(model, df_pred, x_col_pred)
-                st.write('Descargar archivo CSV')
-                st.download_button(
-                    label='Descargar archivo CSV',
-                    data=df_pred.to_csv().encode('utf-8'),
-                    file_name='predicciones.csv',
-                    mime='text/csv')
-                st.experimental_rerun()

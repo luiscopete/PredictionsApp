@@ -36,10 +36,13 @@ def main():
     with st.sidebar:
         selected = option_menu(
             'Selecciona el tipo de regresión deseada',
-            ['Regresión Lineal', 'Regresión Logistica'],
+            ['Regresión Lineal', 'Regresión Logística'],
             orientation='vertical',
             key='menu_principal',
             menu_icon='chart_with_upwards_trend')
+        if selected == 'Regresión Logística':
+            st.error(
+                'La regresión logística aún no está disponible. Pronto estará disponible.')
         st.write(
             'Selecciona el archivo en formato CSV y configura los parámetros de la predicción.')
         file = st.file_uploader('Cargar un archivo CSV', type=['csv'])

@@ -14,6 +14,13 @@ from sklearn.model_selection import train_test_split
 import time
 import util_functions as uf
 
+# ------------------- Streamlit configuration -------------------
+st.set_page_config(
+    page_title='PredictionsApp',
+    page_icon='chart_with_upwards_trend',
+    layout='centered',
+    initial_sidebar_state='auto')
+
 
 def main():
 
@@ -24,11 +31,6 @@ def main():
         message = f.read()
     st.write(message)
     st.markdown("---")
-    st.set_page_config(
-        page_title='PredictionsApp',
-        page_icon='chart_with_upwards_trend',
-        layout='centered',
-        initial_sidebar_state='auto')
 
     # ------------------- Elementos de la barra lateral -------------------
     with st.sidebar:

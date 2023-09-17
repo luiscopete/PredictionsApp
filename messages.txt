@@ -1,0 +1,1 @@
+Bienvenido a nuestra plataforma de predicción! Aquí puedes cargar un archivo de datos y seleccionar las variables que deseas utilizar para entrenar tu modelo de regresión. Simplemente elige tus variables, carga tus datos, escribe los valores a usar como predictores y ¡prepárate para obtener predicciones precisas en un abrir y cerrar de ojos!

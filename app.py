@@ -23,8 +23,12 @@ def main():
     with open('messages.txt', 'r', encoding='utf-8') as f:
         message = f.read()
     st.write(message)
-    # st.write('¡Bienvenido a nuestra plataforma de predicción! Aquí puedes cargar un archivo de datos y seleccionar las variables que deseas utilizar para entrenar tu modelo de regresión. También tienes la opción de ingresar manualmente los datos que quieras predecir. Simplemente elige tus variables, carga tus datos y ¡prepárate para obtener predicciones precisas en un abrir y cerrar de ojos!')
     st.markdown("---")
+    st.set_page_config(
+        page_title='PredictionsApp',
+        page_icon='chart_with_upwards_trend',
+        layout='centered',
+        initial_sidebar_state='auto')
 
     # ------------------- Elementos de la barra lateral -------------------
     with st.sidebar:

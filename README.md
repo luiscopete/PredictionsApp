@@ -2,12 +2,13 @@
 
 Esta es una aplicación web simple construida con Streamlit que permite a los usuarios cargar un archivo CSV, seleccionar columnas dependientes e independientes, entrenar un modelo de regresión lineal y visualizar los resultados. La aplicación también grafica la línea de regresión para los datos seleccionados.
 
-[Enlace a Web App](https://webapp-regressions.streamlit.app/)
+[Enlace a Web App](https://predictions.streamlit.app/)
 
 ## Requisitos
 
 - Python 3.9
 - Streamlit
+- Stramlit-option-menu
 - pandas
 - numpy
 - matplotlib
